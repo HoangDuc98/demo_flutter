@@ -1,4 +1,0 @@
-
-class BasicController extends GetxController{
-
-}
