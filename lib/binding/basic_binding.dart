@@ -1,9 +1,9 @@
+import 'package:example_demo/controllers/main_controller/main_screen_controller.dart';
 import 'package:get/get.dart';
 
 class BasicBinding extends Bindings {
   @override
   void dependencies() {
-    Get.lazyPut(() => BasicController());
+    Get.lazyPut(() => MainController());
   }
-  
 }

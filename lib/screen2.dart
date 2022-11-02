@@ -1,9 +1,10 @@
+import 'package:example_demo/controllers/main_controller/main_screen_controller.dart';
 import 'package:example_demo/main.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 
-class InformationPage extends StatelessWidget {
-  final textController = Get.find<TextController>();
+class InformationPage extends GetView<MainController> {
+  const InformationPage({Key key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
@@ -18,7 +19,7 @@ class InformationPage extends StatelessWidget {
         children: [
           Obx(() {
             return Text(
-              textController.controllerText.value,
+              controller.controllerText.value,
               style: const TextStyle(
                 fontSize: 25,
               ),
