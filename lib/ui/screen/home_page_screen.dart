@@ -1,3 +1,4 @@
+import 'package:example_demo/routes/routes.dart';
 import 'package:get/get_state_manager/src/simple/get_view.dart';
 
 import '../../controllers/main_controller/main_screen_controller.dart';
@@ -40,7 +41,7 @@ class HomePageScreen extends GetView<MainController> {
           ),
           OutlinedButton(
             onPressed: () {
-              Get.to(() => const InformationPage());
+              Get.toNamed(Routes.screen_two);
             },
             child: const Text('Submit'),
           ),
