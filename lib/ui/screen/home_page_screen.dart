@@ -40,9 +40,7 @@ class HomePageScreen extends GetView<MainController> {
           ),
           OutlinedButton(
             onPressed: () {
-              Get.to(
-                const InformationPage(),
-              );
+              Get.to(() => const InformationPage());
             },
             child: const Text('Submit'),
           ),
